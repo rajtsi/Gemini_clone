@@ -1,0 +1,90 @@
+/* Assuming you place this in your CSS file */
+.navbar-container {
+    text-align: center; /* Centers the text horizontally */
+    margin: 20px; /* Add some margin for spacing */
+  }
+  
+  .navbar-container a {
+    margin: 0 10px; /* Adds spacing between the links */
+    text-decoration: none; /* Removes underline from links */
+    color: #007bff; /* Makes the link color blue (optional) */
+  }
+  
+  .navbar-container a:hover {
+    color: #0056b3; /* Adds hover effect */
+  }
+  
+  /* General page styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container for buttons */
+  .dashboard-container {
+    text-align: center;
+  }
+  
+  /* Heading styling */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Shared button styling */
+  .dashboard-button {
+    width: 190px;
+    height: 190px;
+    margin: 10px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Specific button styles */
+  .text-button {
+    background-color: #4caf50; /* Green */
+  }
+  
+  .text-button:hover {
+    background-color: #45a049;
+  }
+  
+  .summary-button {
+    background-color: #2196f3; /* Blue */
+  }
+  
+  .summary-button:hover {
+    background-color: #1e87e0;
+  }
+  
+  .chatbot-button {
+    background-color: #ff9800; /* Orange */
+  }
+  
+  .chatbot-button:hover {
+    background-color: #fb8c00;
+  }
+  
+  /* Button hover and active effect (shared) */
+  .dashboard-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dashboard-button:active {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  
