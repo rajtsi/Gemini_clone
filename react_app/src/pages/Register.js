@@ -27,6 +27,7 @@ export const Register = () => {
     }, 2000);
     } catch (err) {
       console.log(err.message);
+      
     }
   };
 
@@ -77,7 +78,7 @@ export const Register = () => {
       </div>
       <div style={{ width: '100%' }}>
         <TextField
-          label="Password"
+          label="Password Min 6 characters"
           type="password"
           variant="outlined"
           value={password}
@@ -89,6 +90,12 @@ export const Register = () => {
       <Button type="submit" variant="contained" color="primary">
         Submit
       </Button>
+        <Typography variant="body2" component="p" style={{ marginTop: '16px' }}>
+          Already Registered ?
+        </Typography>
+        <Button variant="outlined" color="secondary" onClick={() => navigate('/login')}>
+          Login
+        </Button>
     </Box>
   );
 };
